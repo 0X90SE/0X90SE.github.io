@@ -2,7 +2,7 @@
 title:  "Blog"
 layout: category
 taxonomy: blog
-permalink: /blog
+permalink: /blog/
 author_profile: true
 comments: true
 <!-- entries_layout: grid -->
