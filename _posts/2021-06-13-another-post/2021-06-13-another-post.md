@@ -2,8 +2,8 @@
 title: "Test post"
 date: 2021-06-13 21:40:00+01:00
 header: "Some Header
-image: /assets/images/posts/someheader.png
-teaser_image_path: /assets/images/posts/teaser.png
+image: /assets/images/posts/computer.jpg
+teaser_image_path: /assets/images/posts/computer.jpg
 categories:
   - blog
 tags:
