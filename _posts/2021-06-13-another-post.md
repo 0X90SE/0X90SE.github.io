@@ -11,4 +11,16 @@ tags:
 - Rants
 ---
 
-Lorem ipsum some more...
+## Heading 1
+One has to read some of this stuff
+
+### Heading 2
+This is less important
+
+#### Heading 3
+Blah
+
+* Bullet 1
+* Bullet 2
+
+
