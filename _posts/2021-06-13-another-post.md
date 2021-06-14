@@ -1,20 +1,14 @@
 ---
-title: "Test post"
-date: 2021-06-13 21:40:00+01:00
-header: "Some Header
-image: /assets/images/posts/computer.jpg
+date: 2021-06-13 03:29:55+00:00
+title: A certain title
+header:
+  image: /assets/images/posts/computer.jpg
 teaser_image_path: /assets/images/posts/computer.jpg
-categories:
-  - blog
 tags:
-  - Jekyll
-  - update
-excerpt: "This is an excerpt"
-view_hierarchy_gallery:
-  - url: /assets/images/posts/someimage.png
-    image_path: /assets/images/posts/someimage.png
-    alt: "Some image"
-    title: "Some title"
+- tag1
+- tagB
+- Sec
+- Rants
 ---
 
-Lorem ipsum saome more
+Lorem ipsum some more...
