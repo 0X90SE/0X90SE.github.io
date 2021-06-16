@@ -1,11 +1,11 @@
 ---
-title:  "Blog"
-layout: category
-taxonomy: blog
+title:  "Blog posts"
+layout: posts
+<!-- taxonomy: blog -->
 permalink: /blog/
 author_profile: false
 comments: false
-<!-- entries_layout: grid -->
+entries_layout: grid
 
 header:
   overlay_color: "#000"
