@@ -3,8 +3,8 @@ title:  "Blog"
 layout: category
 taxonomy: blog
 permalink: /blog/
-author_profile: true
-comments: true
+author_profile: false
+comments: false
 <!-- entries_layout: grid -->
 
 header:
