@@ -4,6 +4,9 @@ title: A certain title
 header:
   image: /assets/images/posts/computer.jpg
 teaser_image_path: /assets/images/posts/computer.jpg
+toc: true
+toc_label: "Content"
+toc_sticky: true
 tags:
 - tag1
 - tagB
