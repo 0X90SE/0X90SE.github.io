@@ -3,9 +3,9 @@ title: "Tags"
 permalink: /tags/
 author_profile: false
 excerpt: "Tags for 0x90.se"
-<!--layout: tags-->
+layout: tags
 collection: posts
-entries_layout: tags
+entries_layout: grid
 classes: wide
 ---
 
