@@ -20,7 +20,7 @@ As such, the need to be able to debug applications for this architecture quickly
 
 One method is to use for example JTAG but that requires a functional JTAG port and an interface.
 
-Prerequisites
+## Prerequisites
 
 There are a few tools that need to be in place before we begin.
 

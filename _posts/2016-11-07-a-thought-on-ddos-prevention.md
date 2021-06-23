@@ -16,7 +16,7 @@ OK, here's a thought I came up with when having my wee dram in front of the fire
 
 As we all know, it is always a matter of resources (read botnet zombies etc.) in order to fill the bandwidth of the intended target(s), either by plugging the architectural bottlenecks, hitting the Achilles heel (read DNS infrastructure and similar) or by hitting the target directly.
 
-Problem
+## Problem
 
 No matter bandwidth there will always be a way to consume it. We also know that things start to choke the closer to the target you get.
 
@@ -24,7 +24,7 @@ Of course there are a number of DDoS protection mechanisms and services that may
 
 What if we could stop the attack earlier, way earlier at the point where the packets leave the source networks and throttle the traffic before they even become a problem?
 
-Perhaps One of Many Possible Solutions
+## Perhaps One of Many Possible Solutions
 
 I'm thinking an out of band infrastructure, more resilient towards attacks, dedicated to protect the Internet infrastructure on a global scale. There are plentiful techniques available as well as basic communications channels already in place which does not depend on the Internet infrastructure.
 

@@ -15,18 +15,18 @@ tags:
 
 There are many books on SRE - Software Reverse Egineering, however, there are less books on hardware reverse engineering, especially in the area of electronics. However there is an interesting book concerning PCBs (Printed Circuit Boards) and how to reverse engineer them - The Art of PCB Reverse Engineering by Ng Keng Tiong.
 
-My View of the Book
+## My View of the Book
 
 This book does not primarily focus on reverse engineering printed circuit boards from a security perspective, which I admit I thought at first. Its more of a personal story where the author tells you about the journey reviving ancient hardware that has reached end of life some time ago or where the blue prints simply are no longer available. A journey along with his experiences he then shares through this book.
 
 The book is divided in to the following main chapters
 
-Before You Begin
-Basic Preparation Work
-Laying Out the PCB Artwork
-Wiring Up The Schematics
-Advanced Topics
-Going From Here
+* Before You Begin
+* Basic Preparation Work
+* Laying Out the PCB Artwork
+* Wiring Up The Schematics
+* Advanced Topics
+* Going From Here
 
 The book guides you throughout the whole process ranging from all necessary preparations, documentation, tools needed to the final document visualizing the PCB.
 
@@ -40,7 +40,7 @@ Despite of the above, the book also has a number of valuable and sometimes hard 
 
 I also like that the author also pay some attention to the components encountered on the PCB and explain them a bit even though there are books more dedicated to the topic such as The Art of Electronics and Practical Electronics for Inventors, which I also would like to recommend.
 
-Areas of Improvement
+## Areas of Improvement
 
 On the downside, the much talked about Visio templates used throughout the book are not yet available for sale almost two years after the release of the book. Only the templates for discrete components are available for free download, which is quite sad:
 
@@ -61,7 +61,7 @@ It would also be nice to see more advanced topics like chip-off techniques as th
 
 Perhaps way out of scope and a bit too advanced as it may be out of reach for many, it would be nice to mention methods like computer tomography 3D scanning or fluoroscopic techniques available which may be available at university campuses for example.
 
-Conclusion
+## Conclusion
 
 It is a nice book even if it is quite heavy on the Visio focus. If you are a beginner or intermediate user of Visio from an engineering perspective and only have a basic understanding of electronics and the components used on a PCB, this is an excellent book.
 
