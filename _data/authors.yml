@@ -1,0 +1,11 @@
+Circle:
+  name        : "Circle"
+  bio         : "Site owner"
+  avatar      : "/assets/images/"
+  links:
+    - label: "Email"
+      icon: ""
+      url: "mailto:c i r c l e @ 0 x 9 0 . s e"
+    - label: "Website"
+      icon: ""
+      url: "https://www.0x90.se"
