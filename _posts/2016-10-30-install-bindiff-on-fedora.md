@@ -1,5 +1,17 @@
 ---
-2016-10-30
+date: 2016-10-30 14:07:00+02:00
+title: Install BinDiff on Fedora
+header:
+  image: /assets/images/posts/computer-cropped.jpg
+teaser_image_path: /assets/images/posts/computer-cropped.jpg
+toc: true
+toc_label: "Content"
+toc_sticky: true
+tags:
+- Security
+- Reverse Engineering
+- IDA Pro
+- Fedora
 ---
 
 In March 2011 Google acquired the company Zynamics, the developer of the tools BinDiff and BinNavi. These two tools were thus assimilated by Google, perhaps never to be seen again. However almost on the day 5 years later, BinDiff was release for free to the public! Soon to be followed by BinNavi which was release both for free and open source. Great news!

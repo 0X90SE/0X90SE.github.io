@@ -1,5 +1,17 @@
 ---
-2016-12-01
+date: 2016-12-01 14:07:00+02:00
+title: Install Kali Linux on the USB Armory Mark I
+header:
+  image: /assets/images/posts/computer-cropped.jpg
+teaser_image_path: /assets/images/posts/computer-cropped.jpg
+toc: true
+toc_label: "Content"
+toc_sticky: true
+tags:
+- Security
+- Kali Linux
+- Hacking
+- Electronics
 ---
 
 A while ago, the Kali team release Kali Linux for the USB Armory, a small SoC computer by Inverse Path.

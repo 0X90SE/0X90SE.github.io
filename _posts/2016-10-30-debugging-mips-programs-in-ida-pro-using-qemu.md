@@ -1,5 +1,17 @@
 ---
-2016-10-30
+date: 2016-10-30 14:07:00+02:00
+title: Debugging MIPS Programs in IDA Pro
+header:
+  image: /assets/images/posts/computer-cropped.jpg
+teaser_image_path: /assets/images/posts/computer-cropped.jpg
+toc: true
+toc_label: "Content"
+toc_sticky: true
+tags:
+- Security
+- Reverse Engineering
+- MIPS
+- QEMU
 ---
 
 Many embedded devices use the MIPS CPU architecture in their implementations to run for example Linux, which is one of the most popular implementations. MIPS - Microprocessor without Interlocked Pipeline Stages is a cheap and effective RISC architecture that comes in 32bit and 64bit versions. It is also bi-endian.

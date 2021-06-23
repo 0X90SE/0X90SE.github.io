@@ -1,5 +1,15 @@
 ---
-2016-11-07
+date: 2016-11-17 14:07:00+02:00
+title: A thought on DDoS Prevention
+header:
+  image: /assets/images/posts/computer-cropped.jpg
+teaser_image_path: /assets/images/posts/computer-cropped.jpg
+toc: true
+toc_label: "Content"
+toc_sticky: true
+tags:
+- Security
+- DDoS
 ---
 
 OK, here's a thought I came up with when having my wee dram in front of the fireplace the other day. We've come to learn to live with the day to day threat of DDoS attacks. Each of which seem to grow exponentially in magnitude, launched by literally anyone having some basic programming skills, time and sometimes some resources. The collateral damage is also usually unintended and huge. But what if we could stop many these things earlier?

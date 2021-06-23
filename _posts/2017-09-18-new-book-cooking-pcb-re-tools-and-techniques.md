@@ -1,5 +1,16 @@
 ---
-2017-09-18
+date: 2017-09-18 14:07:00+02:00
+title: New Book Cooking - PCB Reverse Engineering - Tools and Techniques
+header:
+  image: /assets/images/posts/computer-cropped.jpg
+teaser_image_path: /assets/images/posts/computer-cropped.jpg
+toc: true
+toc_label: "Content"
+toc_sticky: true
+tags:
+- Reverse Engineering
+- Electronics
+- Tools
 ---
 
 I while ago, I wrote a review of the book The Art of PCB Reverse Engineering. A while later I got an email of appreciation for the review from Ng Keong Tiong. Now! It would seem that Ng Keng Tiong is working on a sequel to this book called PCB-RE: Tools & Techniques.

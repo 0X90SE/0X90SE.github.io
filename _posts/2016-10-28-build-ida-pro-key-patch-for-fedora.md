@@ -1,5 +1,16 @@
 ---
-2016-10-28
+date: 2016-10-28 14:07:00+02:00
+title: Build IDA Pro Key Patch for Fedora
+header:
+  image: /assets/images/posts/computer-cropped.jpg
+teaser_image_path: /assets/images/posts/computer-cropped.jpg
+toc: true
+toc_label: "Content"
+toc_sticky: true
+tags:
+- Security
+- Reverse Engineering
+- Tools
 ---
 
 KeyPatch by Keystone is a rather powerful tool when it comes to reverse engineering and patching binaries in particular. It lets you write the mnemonics/assembly directly instead of the opcodes. I know it makes my life way easier when patching!

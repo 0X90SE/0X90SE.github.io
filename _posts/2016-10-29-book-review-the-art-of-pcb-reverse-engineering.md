@@ -1,5 +1,16 @@
 ---
-2016-10-29
+date: 2016-10-29 14:07:00+02:00
+title: Book Review - The Art of PCB Reverse Engineering
+header:
+  image: /assets/images/posts/computer-cropped.jpg
+teaser_image_path: /assets/images/posts/computer-cropped.jpg
+toc: true
+toc_label: "Content"
+toc_sticky: true
+tags:
+- Reverse Engineering
+- Electronics
+- Tools
 ---
 
 There are many books on SRE - Software Reverse Egineering, however, there are less books on hardware reverse engineering, especially in the area of electronics. However there is an interesting book concerning PCBs (Printed Circuit Boards) and how to reverse engineer them - The Art of PCB Reverse Engineering by Ng Keng Tiong.
