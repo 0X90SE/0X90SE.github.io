@@ -1,10 +1,20 @@
 ---
-2016-06-17
+date: 2016-06-16 14:07:00+02:00
+title: The indian tech support
+header:
+  image: /assets/images/posts/computer-cropped.jpg
+teaser_image_path: /assets/images/posts/computer-cropped.jpg
+toc: true
+toc_label: "Content"
+toc_sticky: true
+tags:
+- Security
+- Scams
 ---
 
 Perhaps you've heard about them? The Indian Microsoft technical support that has detected that your computer is infected with viruses and infested by hackers. And there they are like knights in shining armour promising to help you...and of course at a small fee...
 
-Background
+## Background
 
 On occasion, I'm at home during workdays and got this weird phone call on a poor line. A woman speaking English with an Indian accent bursting through like a ton of bricks. I could hardly understand a word she said. I soon understood what it all was about. I've heard of them many times. Its been in Swedish media; news papers, TV and radio: The Indian Microsoft Technical Support. Just to throw them off at that time, I asked them how on earth they could get indications on that my computer was infected by viruses, because I run Linux. Short silence on the other end of the line, followed by whispering with some co-scammers. And all of the sudden they just hung up on me!
 
@@ -12,7 +22,7 @@ Next time I want to set a trap...
 
 In mid-February 2014 they call me again, and this time I'm a bit more prepared. I fired up my virtual machine, which in fact was a bit ill prepared, as well as my email address used for these purposes. They were all almost empty. However, I thought I'd give it a shot.
 
-Modus Operandi
+## Modus Operandi
 
 After just a few minutes of searching the web I find that all victims and all those who have played along tell the same tale, almost word by word. This indicate that we are dealing with the same scammers in most cases. This may also indicate that the ones talking to their victims are merely the puppets, while the pupeteers are the ones that are cashing in on these scams.
 
@@ -24,7 +34,7 @@ As seen in the image to the left, there are 6 established connections - 2 active
 
 Shortly after stating this, they ask me what I see on the screen. As text is being written in the command window, they want to give me the impression of that Windows is telling me that the computer is corrupted and that I need a new license key. I think someone at Microsoft needs to brush up his/her English a bit. The timing of the text being persented tells me that someone at their end is typing it as we speak over the phone. Hilarious!
 
-Their Tools
+## Their Tools
 
 When they have given you this small fearful guide, they of course tell you that they can fix all this for you. And of course there is a small fee involved in this. Trying to be professional, they offer you; a two year, a three year, a five year and life time support plan. This is pretty amazing in itself since Windows XP will reach end of support in April this year (April 2014)! By directing you to a poorly designed payment web page they ask you to enter your credit card details.
 
@@ -53,6 +63,6 @@ pg.ksnet.co.kr	210.181.28.137
 
 Whether these site are all scams or misused in the Indian support scams is unknown to me as I have not digged any further into this. I do not condone any illegal activities against these sites.
 
-Conclusion
+## Conclusion
 
 First off, I waited for the moment where they would plant some malware in my system in order to gain some persistence. However, to my great disapointment my wait was all in vein. They are nothing more than a bunch of simple credit card scammers using some cheap theatrical moves built on FUD in order to steal your credit card details. The overall MO/Manuscript is somewhat well rehearsed but at the same time very poorly orchestrated. We may also laugh at "the stupid user" for buying such a cheap trick. However, laughing at the "stupid user" won't change a thing. We should instead ask ourselves why some people buy these cheap tricks, because its certainly not stupidity. Perhaps we are dealing with carelessness as a result of great ignorance? No, I think we should instead ask ourselves how we can prevent this. Perhaps with the clever use of technology and education of the general population?
