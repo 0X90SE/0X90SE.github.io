@@ -61,6 +61,11 @@
     bottom: 0;
   }
 
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
   a + a {
     opacity: 0.5;
   }
