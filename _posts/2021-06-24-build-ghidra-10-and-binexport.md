@@ -1,6 +1,6 @@
 ---
 date: 2021-06-24 16:09:00+02:00
-title: Build Ghidra 10 and BinExport
+title: Build Ghidra (10) from source
 excerpt:
 author: Circle
 header:
@@ -16,14 +16,14 @@ tags:
 - Tools
 ---
 
-Ghidra 10 has now been released. I've been reloading the Ghidra Github almost every day now in order to get my hands on the release. However, since a few weeks I've been playing around with the source and the Beta 10, building it from scratch gaining insight into the build process and thought I'd share them with you guys as I know there are a lot of beginners out there that really want to level-up their skills.
+Ghidra 10 has now been released. I've been reloading the Ghidra Github almost every day now in order to get my hands on the release. However, since a few weeks I've been playing around with the source and the Beta 10, building Ghidra from scratch gaining insight into the build process and thought I'd share them with you guys as I know there are a lot of beginners out there that really want to level-up their skills.
 
 
 ## Prerequisites
 
 Do note that this guide is Fedora centric. However these packages are usually available in Debian/Ubuntu using the same or similar package names. Use `apt search` to find the packages needed. Prepping and building Ghidra for Eclipse development is also out of scope of this guide.
 
-I know that you may have some, perhaps most or even all packages below installed. Even so, they are needed in the various steps in this guide.
+I also know that you may have some, perhaps most or even all packages below installed. Even if so, they are needed in the various steps in this guide.
 
 ```
 sudo dnf install java-11-openjdk git wget unzip 
@@ -32,7 +32,7 @@ sudo dnf install java-11-openjdk git wget unzip
 
 ### Setting active Java version
 
-Ghidra does not agree entirely with the latest Java release, so we need to ensure that we use the correct version.
+Ghidra does not agree entirely with the latest Java release, so we need to ensure that we use Java 11.
 
 ```
 java -version
@@ -45,6 +45,11 @@ Should your version differ, switch it by using command:
 
 ```
 sudo alternatives --config java
+```
+
+Output similar to the below is expected:
+
+```
 [sudo] password for user: 
 
 There are 2 programs which provide 'java'.
@@ -121,7 +126,7 @@ OS:           Linux 5.12.12-300.fc34.x86_64 amd64
 
 Building Ghidra is very straight forward and I have not encountered any snags along the way this far, having built a number of releases.
 
-First, get 
+First, get Ghidra from Github:
 
 ```
 git clone https://github.com/NationalSecurityAgency/ghidra.git
@@ -162,6 +167,37 @@ Now lets prepare Ghidra for building. The gradle script `fetchDependencies.gradl
 ```
 gradle -I gradle/support/fetchDependencies.gradle init
 ```
+Output similar to the below is expected:
+```
+Starting a Gradle Daemon (subsequent builds will be faster)
+Processing dex-tools-2.0.zip
+Copying AXMLPrinter2.jar to /home/someuser/Downloads/git-repos/ghidra/dependencies/flatRepo
+Copying yajsw-stable-12.12.zip to /home/someuser/Downloads/git-repos/ghidra/dependencies/GhidraServer
+Copying PyDev 6.3.1.zip to /home/someuser/Downloads/git-repos/ghidra/dependencies/GhidraDev
+Copying cdt-8.6.0.zip to /home/someuser/Downloads/git-repos/ghidra/dependencies/GhidraDev
+Copying vs2012_x64.fidb to /home/someuser/Downloads/git-repos/ghidra/dependencies/fidb
+Copying vs2012_x86.fidb to /home/someuser/Downloads/git-repos/ghidra/dependencies/fidb
+Copying vs2015_x64.fidb to /home/someuser/Downloads/git-repos/ghidra/dependencies/fidb
+Copying vs2015_x86.fidb to /home/someuser/Downloads/git-repos/ghidra/dependencies/fidb
+Copying vs2017_x64.fidb to /home/someuser/Downloads/git-repos/ghidra/dependencies/fidb
+Copying vs2017_x86.fidb to /home/someuser/Downloads/git-repos/ghidra/dependencies/fidb
+Copying vs2019_x64.fidb to /home/someuser/Downloads/git-repos/ghidra/dependencies/fidb
+Copying vs2019_x86.fidb to /home/someuser/Downloads/git-repos/ghidra/dependencies/fidb
+Copying vsOlder_x64.fidb to /home/someuser/Downloads/git-repos/ghidra/dependencies/fidb
+Copying vsOlder_x86.fidb to /home/someuser/Downloads/git-repos/ghidra/dependencies/fidb
+
+> Task :init SKIPPED
+The build file 'build.gradle' already exists. Skipping build initialization.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 51s
+```
+
 
 Now we can build Ghidra
 ```
@@ -172,51 +208,9 @@ Most of the above and more can be found in [Ghidra Developers Guide](https://git
 
 
 
-## Build and Install BinExport
-
-In order to be able to use BinDiff with Ghidra, we need to build and install [BinExport](https://github.com/google/binexport) developed and maintained by Google. So why not build it as well while we're at it as it depends on the Ghidra source?
-
-Building and installing BinExport is pretty straight forward as well.
-
-
-```
-git clone https://github.com/google/binexport
-```
-
-The instructions are not that clear
-
-```
-gradle -PGHIDRA_INSTALL_DIR=/home/user/bin/ghidra10
-```
-
-Now that BinExport is built, we may now install it as an Extension in Ghidra. Start Ghidra...
-
-
-The full official instructions may be found here: [BinExport for Ghidra](https://github.com/google/binexport/tree/main/java).
-
-
-### Install BinExport
-
-Start Ghidra and click `File` and then `Install Extensions`. See image below:
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ghidra-main.jpg" alt="">
-
-In the extension installation window, click the `+` sign. Then browse to where your recently built BinExport extension reside and choose the `-zip` file and click `OK`. Click `OK` again and restart Ghidra.
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ghidra-extension.jpg" alt="">
-
-Now in order to try out the extension, open one of your recent projects or create a new simple one. Right-click your binary and choose `Export`
-
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/posts/ghidra-export.jpg" alt="">
-
-
-
 ## Concluding Remarks
 
 As seen, its quite easy and fast to build Ghidra which is nice when you want to try that new announced feature not yet released but present in the code base. No need to scrap your old version of Ghidra either since they ar self contained and can co-exist on your Linux system.
 
 **Important:** Ghidra version 10 is backward compatible, but not the other way around. Old databases will be converted when opened in Ghidra version 10. Make sure to make a backup of your old projects if you need to be able to open them in older versions of Ghidra.
 
-Use my other guide I wrote a couple of years ago in order to install BinDiff on your Fedora system.
-
-**Note:** If you use `Agressive...` when analyzing your binary in Ghidra, the chances of getting a good comparison increases.
