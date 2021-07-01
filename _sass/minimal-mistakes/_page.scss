@@ -71,15 +71,7 @@ body {
 .page__title {
   margin-top: 0;
   line-height: 1;
-  // Custom shadow
-  .page__title,
-  .page__meta,
-  .page__lead,
-  .btn {
-    color: #fff;
-    text-shadow: 3px 3px 4px rgba(#000, 0.8);
-  }
-
+  text-shadow: 3px 3px 4px rgba(#000, 0.8);
 
   & + .page__meta {
     margin-top: -0.5em;
