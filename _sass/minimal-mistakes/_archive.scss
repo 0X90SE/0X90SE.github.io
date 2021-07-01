@@ -77,6 +77,13 @@
     margin-top: 1em;
     border-bottom: none;
   }
+//}
+
+  .archive__item-date {
+    a:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .archive__item-excerpt {
