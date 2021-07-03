@@ -4,8 +4,8 @@ title: Build Ghidra (10) from source
 excerpt:
 author: Circle
 header:
-  image: /assets/images/posts/ghidra2.jpg
-teaser_image_path: /assets/images/posts/ghidra.jpg
+  image: /assets/images/posts/ghidra2.png
+teaser_image_path: /assets/images/posts/ghidra.png
 toc: true
 toc_label: "Content"
 toc_sticky: true
