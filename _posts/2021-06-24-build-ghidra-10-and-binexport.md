@@ -13,7 +13,6 @@ toc_sticky: true
 tags:
 - Reverse Engineering
 - Ghidra
-- BinDiff
 - Tools
 ---
 
