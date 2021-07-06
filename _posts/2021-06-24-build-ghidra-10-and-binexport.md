@@ -1,6 +1,7 @@
 ---
 date: 2021-06-24 16:09:00+02:00
-title: Build Ghidra (10) from source
+last_modified_at: 2021-07-06 12:00:00+02:00
+title: Build Ghidra from source
 excerpt:
 author: Circle
 header:
@@ -50,7 +51,7 @@ sudo alternatives --config java
 Output similar to the below is expected:
 
 ```
-[sudo] password for user: 
+[sudo] password for someuser: 
 
 There are 2 programs which provide 'java'.
 
@@ -66,7 +67,7 @@ Make your choice `java-11-openjdk.x86_64` and re-run `java -version` to verify y
 
 ```
 sudo alternatives --config javac
-[sudo] password for user: 
+[sudo] password for someuser: 
 
 There are 2 programs which provide 'javac'.
 
@@ -95,7 +96,7 @@ sudo cp -R gradle-7.1 /usr/local/gradle
 sudo echo "export PATH=/usr/local/gradle/bin:$PATH" > /etc/profile.d/gradle.sh
 ```
 
-This time only, run (By next reboot/login, Gradle will be added to your path:
+This time only, run (By next reboot/login, Gradle will be added to your path):
 
 ```
 source /etc/profile.d/gradle.sh
@@ -204,7 +205,30 @@ Now we can build Ghidra
 gradle buildGhidra
 ```
 
-Most of the above and more can be found in [Ghidra Developers Guide](https://github.com/NationalSecurityAgency/ghidra/blob/master/DevGuide.md).
+The process takes around 6 minutes on a modern machine. Output similar to the one below is expected when done:
+
+```
+...
+> Task :createInstallationZip
+updateSlaFilesTimestamp: Updated timestamps to 98 .sla files.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/7.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 5m 47s
+464 actionable tasks: 464 executed
+```
+
+You will find the finished package in:
+
+```
+-rw-rw-r--. 1 someuser someuser 371742990 Jul  6 12:00 ghidra/build/dist/ghidra_10.0_DEV_20210706_linux64.zip
+```
+
+Now you can install Ghidra the way you use to do when downloading the package from the official sites. Most of the above and more can also be found in [Ghidra Developers Guide](https://github.com/NationalSecurityAgency/ghidra/blob/master/DevGuide.md).
 
 
 
@@ -212,5 +236,8 @@ Most of the above and more can be found in [Ghidra Developers Guide](https://git
 
 As seen, its quite easy and fast to build Ghidra which is nice when you want to try that new announced feature not yet released but present in the code base. No need to scrap your old version of Ghidra either since they ar self contained and can co-exist on your Linux system.
 
-**Important:** Ghidra version 10 is backward compatible, but not the other way around. Old databases will be converted when opened in Ghidra version 10. Make sure to make a backup of your old projects if you need to be able to open them in older versions of Ghidra.
+**Important:** Ghidra version 10 is backward compatible, but not the other way around. Old projects will be converted when opened in Ghidra version 10. Make sure to make a backup of your old projects if you need to be able to open them in older versions of Ghidra.
+{: .notice--warning}
+
+Happy reversing!
 
