@@ -93,16 +93,12 @@ Start Ghidra and install the new extension by clicking "File" and then "Install 
 
 {% include gallery id="gallery_binexport_install" caption="*Installing the BinExport Ghidra Extension.*" %}
 
-Information about the extension may be seen by marking the installed extension.
-
-IMAGE_HERE
-
-Click "OK" to close this dialog and the restart Ghidra in order to make the extension active.
+Information about the extension may be seen by marking the installed extension. Click "OK" to close this dialog and the restart Ghidra in order to make the extension active.
 
 
 ## Install BinDiff
 
-I wrote this guide a few years ago on how to install BinDiff 4.x on Fedora Linux, but when my old server stopped working the guide was lost and with time equally inaccurate. I found out that it was lost when doing a search in bindiff and Fedora. Thomas at [https://0xc0decafe.com/install-bindiff-on-fedora/](https://0xc0decafe.com/install-bindiff-on-fedora/) had tried to read my post and failed. Instead it resulted in a nice and detailed post of his own.
+I wrote [this guide](https://www.0x90.se/install-bindiff-on-fedora/) a few years ago on how to install BinDiff 4.2 on Fedora Linux, but when my old server stopped working the guide was lost and with time equally inaccurate. I found out that it was lost when doing a search in bindiff and Fedora. Thomas at [https://0xc0decafe.com/install-bindiff-on-fedora/](https://0xc0decafe.com/install-bindiff-on-fedora/) had tried to read my post and failed. Instead it resulted in a nice and detailed post of his own.
 
 Download BinDiff 7.0:
 
