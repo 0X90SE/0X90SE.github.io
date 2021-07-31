@@ -226,7 +226,7 @@ in order to test the installation, take any Ghidra project of yours where you ha
 
 As you can see, the procedure, albeit a bit more lengthy, it is still quite simple.
 
-**NOTE*** In order to get good BinDiff results you need to do a good and for each binary to be compared, an equally executed analysis. The post "[Patch Diffing with Ghidra](https://ihack4falafel.github.io/Patch-Diffing-with-Ghidra/)" by Hashim gives you quite a good overview of the process of diffing two binaries.
+**NOTE** In order to get good BinDiff results you need to do a good and for each binary to be compared, an equally executed analysis. The post "[Patch Diffing with Ghidra](https://ihack4falafel.github.io/Patch-Diffing-with-Ghidra/)" by Hashim gives you quite a good overview of the process of diffing two binaries.
 {: .notice--info}
 
 
