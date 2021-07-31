@@ -98,7 +98,7 @@ Information about the extension may be seen by marking the installed extension. 
 
 ## Install BinDiff
 
-I wrote [this guide](https://www.0x90.se/install-bindiff-on-fedora/) a few years ago on how to install BinDiff 4.2 on Fedora Linux, but when my old server stopped working the guide was lost and with time equally inaccurate. I found out that it was lost when doing a search in bindiff and Fedora. Thomas at [https://0xc0decafe.com/install-bindiff-on-fedora/](https://0xc0decafe.com/install-bindiff-on-fedora/) had tried to read my post and failed. Instead it resulted in a nice and detailed post of his own.
+I wrote [this guide](https://www.0x90.se/install-bindiff-on-fedora/) a few years ago on how to install BinDiff 4.2 on Fedora Linux, but when my old server stopped working the guide was lost and with time equally inaccurate. I found out that it was lost when doing a search in bindiff and Fedora. Thomas at [https://0xc0decafe.com/](https://0xc0decafe.com/) had tried to read my post and failed. Instead it resulted in a nice and detailed post of his own: [https://0xc0decafe.com/install-bindiff-on-fedora/](https://0xc0decafe.com/install-bindiff-on-fedora/).
 
 Download BinDiff 7.0:
 
