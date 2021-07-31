@@ -13,6 +13,10 @@ gallery_binexport_install:
     image_path: /assets/images/posts/2021-07-06-install-binexport-and-bindiff/install-binexport-browse-extension.png
     alt: "Install Ghidra Extension"
     title: "Install Ghidra Extension"
+  - url: /assets/images/posts/2021-07-06-install-binexport-and-bindiff/install-binexport-marked-extension.png
+    image_path: /assets/images/posts/2021-07-06-install-binexport-and-bindiff/install-binexport-marked-extension.png
+    alt: "Install Ghidra Extension"
+    title: "Install Ghidra Extension"
 toc: true
 toc_label: "Content"
 toc_sticky: true
@@ -235,7 +239,11 @@ As you can see, the procedure, albeit a bit more lengthy, it is still quite simp
 Some references and recommended links:
 
 [www.zynamics.com/bindiff.html](https://www.zynamics.com/bindiff.html)
+
 [https://www.zynamics.com/bindiff/manual/index.html](https://www.zynamics.com/bindiff/manual/index.html)
+
 [https://github.com/google/binexport](https://github.com/google/binexport)
+
 [https://ihack4falafel.github.io/Patch-Diffing-with-Ghidra/](https://ihack4falafel.github.io/Patch-Diffing-with-Ghidra/)
+
 [0x0decafe.com](https://0xc0decafe.com/)
