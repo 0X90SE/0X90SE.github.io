@@ -161,6 +161,7 @@ body {
 }
 
 .page__hero {
+  // Center?
   position: relative;
   margin-bottom: 2em;
   @include clearfix;
@@ -218,7 +219,8 @@ body {
 }
 
 .page__hero-image {
-  width: 50%;
+  // Image size
+  width: 100%;
   height: auto;
   -ms-interpolation-mode: bicubic;
 }
