@@ -174,8 +174,8 @@ lseek(3, 0, SEEK_SET)                   = 0
 read(3, "{\n \"version\": 7,\n \"directory\": \""..., 9823) = 9823
 close(3)                                = 0
 mkdir("/home", 0775)                    = -1 EEXIST (File exists)
-mkdir("/home/user", 0775)               = -1 EEXIST (File exists)
-mkdir("/home/user/.bindiff", 0775)      = -1 EEXIST (File exists)
+mkdir("/home/someuser", 0775)               = -1 EEXIST (File exists)
+mkdir("/home/someuser/.bindiff", 0775)      = -1 EEXIST (File exists)
 openat(AT_FDCWD, "/home/someuser/.bindiff/bindiff.json", O_RDONLY) = -1 ENOENT (No such file or directory)
 sysinfo({uptime=79447, loads=[145952, 156448, 140384], totalram=67128475648, freeram=16485195776, sharedram=2208235520, bufferram=32260096, totalswap=8589930496, freeswap=8589930496, procs=1405, totalhigh=0, freehigh=0, mem_unit=1}) = 0
 stat("bin/bindiff.jar", 0x7ffeb50a21b0) = -1 ENOENT (No such file or directory)
