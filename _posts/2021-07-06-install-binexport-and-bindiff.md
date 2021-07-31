@@ -28,7 +28,7 @@ tags:
 - Tools
 ---
 
-BinDiff v7.1 has quite resently been released! So I thought I'd write an updated guide on how to install BinDiff on Fedora Linux. Since my last post on how to install BinDiff on Fedora I've switched from IDA Pro to Ghidra. IDA Pro is very good, but not $6000+ good (Average price for IDA Pro and a couple of decompilers) compared to a free and a very competent Ghidra...but thats my personal opinion and a completely different discussion. Thus this guide will also include steps on how to install [BinExport](https://github.com/google/binexport) needed in order to use BinDiff with Ghidra on Fedora Linux.
+BinDiff v7.1 has quite resently been released! So I thought I'd write an updated guide on how to install BinDiff on Fedora Linux. Since my last post on how to install BinDiff on Fedora I've switched from IDA Pro to Ghidra. IDA Pro is very great, but not $6000+ great (Average price for IDA Pro and a couple of decompilers) compared to a free and a very competent Ghidra...but thats my personal opinion and a completely different discussion. Thus this guide will also include steps on how to install [BinExport](https://github.com/google/binexport) needed in order to use BinDiff with Ghidra on Fedora Linux.
 
 
 ## Prerequisites
