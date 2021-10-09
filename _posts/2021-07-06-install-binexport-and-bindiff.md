@@ -1,7 +1,7 @@
 ---
 date: 2021-07-31 13:00:00:00+02:00
 last_modified_at: 2021-07-31 13:00:00:00+02:00
-title: Install BinExport and BinDiff
+title: Install BinExport and BinDiff on Fedora Linux
 excerpt:
 author: Circle
 author_profile: false
